@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <StatDef>
+    <defName>MassOffset</defName>
+    <label>운반 오프셋</label>
+    <description>운반량 최종 결과값에 다음 오프셋을 합산합니다.</description>
+    <category>BasicsPawn</category>
+    <minValue>-100</minValue>
+    <maxValue>100</maxValue>
+    <defaultBaseValue>0</defaultBaseValue>
+    <showOnPawns>true</showOnPawns>
+    <showOnAnimals>false</showOnAnimals>
+    <showOnMechanoids>false</showOnMechanoids>
+    <showOnEntities>false</showOnEntities>
+    <toStringStyle>FloatMaxOne</toStringStyle>
+    <statFactors>
+    </statFactors>
+  </StatDef>
+
+</Defs>
