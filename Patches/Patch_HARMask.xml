@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!--래비-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Rabbie The Moonrabbit race</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<!--의복제한에추가-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName =
+						"Rabbie"]/alienRace/raceRestriction/apparelList</xpath>
+					<value>
+						<li>Apparel_ClothMask</li>
+					</value>
+				</li>
+				<!--전용텍스쳐경로지정-->
+				<li Class="PatchOperationAdd">
+					<success>Always</success>
+					<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName =
+						"Rabbie"]/alienRace/graphicPaths</xpath>
+					<value>
+
+						<apparel>
+							<individualPaths>
+								<li>
+									<key>Apparel_ClothMask</key>
+									<value>Mask/Rabbie_Mask</value>
+								</li>
+							</individualPaths>
+						</apparel>
+
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
