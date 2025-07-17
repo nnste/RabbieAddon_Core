@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingCategoryDef>
+    <defName>Planetarium_Case</defName>
+    <label>플라네타륨 분류통</label>
+    <parent>Manufactured</parent>
+    <resourceReadoutRoot>true</resourceReadoutRoot>
+    <iconPath>UI/Icons/ThingCategories/Drugs</iconPath>
+  </ThingCategoryDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>PlanetariumCase_Base</defName>
+    <label>플라네타륨 분류통</label>
+    <description>정제과정에서 복용하기 쉽게 분류통으로 소분된 플라네타륨입니다. 열과 외부충격에 강합니다.\n\n상급품부터 하급품이 랜덤하게 제작됩니다.</description>
+    <graphicData>
+      <texPath>Things/Item/Drugs/Planetarium/PlanetariumCase_Base</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <MarketValue>60</MarketValue>
+      <Mass>0.02</Mass>
+      <Flammability>0.7</Flammability>
+      <DeteriorationRate>0.1</DeteriorationRate>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="DrugPillBase">
+    <defName>PlanetariumCase_GradeC</defName>
+    <label>플라네타륨 분류통 : Grade C</label>
+    <description>정제과정에서 저급으로 분류된 플라네타륨 분류통입니다.열과 외부충격에 강합니다.\n\n저급은 대게 동물을 다져 미량의 플라네타륨 채취하는 방식을 하여 품질이 좋지않은 결정들이며, 일부는 식물에서 채취하기도 했습니다.</description>
+    <graphicData>
+      <texPath>Things/Item/Drugs/PlanetariumCase_GradeC</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Flammability>0.1</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <MarketValue>30</MarketValue>
+      <Mass>0.02</Mass>
+    </statBases>
+    <techLevel>Ultra</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <baseIngestTicks>200</baseIngestTicks>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>RefinedPlanetarium_GradeC</hediffDef>
+          <severity>1</severity>
+          <toleranceChemical>Planetarium</toleranceChemical>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>Planetarium</chemical>
+        <addictiveness>0.8</addictiveness>
+        <needLevelOffset>0.8</needLevelOffset>
+        <listOrder>1027</listOrder>
+      </li>
+    </comps>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingCategories>
+      <li>Planetarium_Case</li>
+    </thingCategories>
+  </ThingDef>
+
+    <ThingDef ParentName="DrugPillBase">
+    <defName>PlanetariumCase_GradeB</defName>
+    <label>플라네타륨 분류통 : Grade B</label>
+    <description>정제과정에서 중급으로 분류된 플라네타륨 분류통입니다.열과 외부충격에 강합니다.\n\n중급은 어디서 만들었는지 모를만큼 표준적이고 균일한 형태를 가졌습니다.</description>
+    <graphicData>
+      <texPath>Things/Item/Drugs/PlanetariumCase_GradeB</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Flammability>0.1</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <MarketValue>65</MarketValue>
+      <Mass>0.02</Mass>
+    </statBases>
+    <techLevel>Ultra</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <baseIngestTicks>200</baseIngestTicks>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>RefinedPlanetarium</hediffDef>
+          <severity>1</severity>
+          <toleranceChemical>Planetarium</toleranceChemical>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>Planetarium</chemical>
+        <addictiveness>1</addictiveness>
+        <needLevelOffset>1</needLevelOffset>
+        <listOrder>1027</listOrder>
+      </li>
+    </comps>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingCategories>
+      <li>Planetarium_Case</li>
+    </thingCategories>
+  </ThingDef>
+
+  <!--RefinedPlanetarium_GradeC-->
+  <HediffDef>
+    <defName>RefinedPlanetarium_GradeC</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>저급 정제플라네타륨 섭취</label>
+    <labelNoun>저급 정제플라네타륨을 섭취함</labelNoun>
+    <description>최근에 저급 정제플라네타륨을 섭취했습니다.하루 동안 좀더 정신이 뚜렷해지며 약간의 불쾌함이 있습니다.</description>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.0</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.1</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>RefinedPlanetarium_GradeC</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>RefinedPlanetarium_GradeC</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+      <li>Bloodlust</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>저급 정제플라네타륨 섭취</label>
+        <description>내가 섭취한게 옆집 발발이 고기였을까, 어제 온 부족민 고기였을까..?</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>
