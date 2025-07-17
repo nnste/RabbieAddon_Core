@@ -12,7 +12,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>PlanetariumCase_Base</defName>
     <label>플라네타륨 분류통</label>
-    <description>정제과정에서 복용하기 쉽게 분류통으로 소분된 플라네타륨입니다. 열과 외부충격에 강합니다.\n\n상급품부터 하급품이 랜덤하게 제작됩니다.</description>
+    <description>정제과정에서 복용하기 쉽게 분류통으로 소분된 플라네타륨입니다. 열과 외부충격에 강합니다.\n\n상급품부터 하급품까지 제작됩니다.</description>
     <graphicData>
       <texPath>Things/Item/Drugs/Planetarium/PlanetariumCase_Base</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -31,7 +31,7 @@
   <ThingDef ParentName="DrugPillBase">
     <defName>PlanetariumCase_GradeC</defName>
     <label>플라네타륨 분류통 : Grade C</label>
-    <description>정제과정에서 저급으로 분류된 플라네타륨 분류통입니다.열과 외부충격에 강합니다.\n\n저급은 대게 동물을 다져 미량의 플라네타륨 채취하는 방식을 하여 품질이 좋지않은 결정들이며, 일부는 식물에서 채취하기도 했습니다.</description>
+    <description>정제과정에서 저급으로 분류된 플라네타륨 분류통입니다.열과 외부충격에 강합니다.\n\n저급은 대게 동물을 다져 미량의 플라네타륨을 채취하는 방식을 하여 품질이 좋지않은 결정들이며, 일부는 식물에서 채취하기도 했습니다.</description>
     <graphicData>
       <texPath>Things/Item/Drugs/PlanetariumCase_GradeC</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -48,7 +48,6 @@
     <techLevel>Ultra</techLevel>
     <ingestible>
       <drugCategory>Medical</drugCategory>
-      <baseIngestTicks>200</baseIngestTicks>
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>RefinedPlanetarium_GradeC</hediffDef>
@@ -93,10 +92,53 @@
     <techLevel>Ultra</techLevel>
     <ingestible>
       <drugCategory>Medical</drugCategory>
-      <baseIngestTicks>200</baseIngestTicks>
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>RefinedPlanetarium</hediffDef>
+          <severity>1</severity>
+          <toleranceChemical>Planetarium</toleranceChemical>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>Planetarium</chemical>
+        <addictiveness>1</addictiveness>
+        <needLevelOffset>1</needLevelOffset>
+        <listOrder>1027</listOrder>
+      </li>
+    </comps>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingCategories>
+      <li>Planetarium_Case</li>
+    </thingCategories>
+  </ThingDef>
+
+    <ThingDef ParentName="DrugPillBase">
+    <defName>PlanetariumCase_GradeA</defName>
+    <label>플라네타륨 분류통 : Grade A</label>
+    <description>정제과정에서 고급으로 분류된 플라네타륨 분류통입니다.열과 외부충격에 강합니다.\n\n고급은 화학 교사의 손에서 처음 양산되기 시작하였으며, 순도가 높아 좀더 푸른 결정을 가졌습니다.</description>
+    <graphicData>
+      <texPath>Things/Item/Drugs/PlanetariumCase_GradeA</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Flammability>0.1</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <MarketValue>65</MarketValue>
+      <Mass>0.02</Mass>
+    </statBases>
+    <techLevel>Ultra</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>RefinedPlanetarium_GradeA</hediffDef>
           <severity>1</severity>
           <toleranceChemical>Planetarium</toleranceChemical>
         </li>
@@ -164,4 +206,49 @@
     </stages>
   </ThoughtDef>
 
+  <!--RefinedPlanetarium_GradeA-->
+  <HediffDef>
+    <defName>RefinedPlanetarium_GradeA</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>고급 정제플라네타륨 섭취</label>
+    <labelNoun>고급 정제플라네타륨을 섭취함</labelNoun>
+    <description>최근에 고급 정제플라네타륨을 섭취했습니다.하루 동안 좀더 정신이 뚜렷해지며 기분이 좋아집니다.</description>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.0</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.1</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>RefinedPlanetarium_GradeA</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>RefinedPlanetarium_GradeA</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+      <li>Bloodlust</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>고급 정제플라네타륨 섭취</label>
+        <description>좋았어.정말로...살아있는 기분이야.</description>
+        <baseMoodEffect>12</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
 </Defs>

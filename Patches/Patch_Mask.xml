@@ -6,7 +6,6 @@
 			<li>Rabbie The Moonrabbit race</li>
 		</mods>
 		<match Class="PatchOperationSequence">
-			<success>Normal</success>
 			<operations>
 				<!--의복제한에추가-->
 				<li Class="PatchOperationAdd">
@@ -18,7 +17,6 @@
 				</li>
 				<!--전용텍스쳐경로지정-->
 				<li Class="PatchOperationAdd">
-					<success>Always</success>
 					<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName =
 						"Rabbie"]/alienRace/graphicPaths</xpath>
 					<value>
