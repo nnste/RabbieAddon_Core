@@ -1,8 +1,0 @@
-플라네타륨 분류통 베이스
-      <texPath>Things/Item/Drugs/Planetarium/PlanetariumCase_Base</texPath>
-플라네타륨 분류통 저급
-      <texPath>Things/Item/Drugs/PlanetariumCase_GradeC</texPath>
-플라네타륨 분류통 중급
-      <texPath>Things/Item/Drugs/PlanetariumCase_GradeB</texPath>
-플라네타륨 분류통 고급
-      <texPath>Things/Item/Drugs/PlanetariumCase_GradeA</texPath>

@@ -14,6 +14,13 @@
 						</recipeUsers>
 					</value>
 				</li>
+				<!--기존PlanetariumTea텍스쳐 변경-->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="PlanetariumTea"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Things/Item/Drugs/PLtea_GradeB</texPath>
+					</value>
+				</li>
 			</operations>
 		</match>
 	</Operation>

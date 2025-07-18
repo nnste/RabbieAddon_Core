@@ -42,6 +42,7 @@
             <Cooking>2</Cooking>
         </skillRequirements>
         <researchPrerequisite>Planettea</researchPrerequisite>
+      <displayPriority>1470</displayPriority>
     </RecipeDef>
     <!--Make_PlanetariumTea_GradeB-->
     <RecipeDef>
@@ -83,6 +84,7 @@
             <Cooking>2</Cooking>
         </skillRequirements>
         <researchPrerequisite>Planettea</researchPrerequisite>
+      <displayPriority>1480</displayPriority>
     </RecipeDef>
     <!--Make_PlanetariumTea_GradeA-->
     <RecipeDef>
@@ -122,6 +124,7 @@
             <Cooking>2</Cooking>
         </skillRequirements>
         <researchPrerequisite>Planettea</researchPrerequisite>
+      <displayPriority>1490</displayPriority>
     </RecipeDef>
     <!--Make_PlanetariumTea_GradeCBulk-->
     <RecipeDef>
@@ -165,6 +168,7 @@
             <Cooking>2</Cooking>
         </skillRequirements>
         <researchPrerequisite>Planettea</researchPrerequisite>
+      <displayPriority>1475</displayPriority>
     </RecipeDef>
     <!--Make_PlanetariumTea_GradeBbulk-->
     <RecipeDef>
@@ -206,6 +210,7 @@
             <Cooking>2</Cooking>
         </skillRequirements>
         <researchPrerequisite>Planettea</researchPrerequisite>
+      <displayPriority>1485</displayPriority>
     </RecipeDef>
     <!--Make_PlanetariumTea_GradeAbulk-->
     <RecipeDef>
@@ -245,5 +250,6 @@
             <Cooking>2</Cooking>
         </skillRequirements>
         <researchPrerequisite>Planettea</researchPrerequisite>
+      <displayPriority>1495</displayPriority>
     </RecipeDef>
 </Defs>

@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+  <!-- 저급 플라네타리움 차 -->
   <ThingDef ParentName="MakeableDrugBase">
     <defName>PLtea_GradeC</defName>
     <label>저급 플라네타륨 차</label>
@@ -97,6 +98,7 @@
     </stages>
   </ThoughtDef>
 
+  <!-- 고급 플라네타리움 차 -->
   <ThingDef ParentName="MakeableDrugBase">
     <defName>PLtea_GradeA</defName>
     <label>고급 플라네타륨 차</label>
@@ -107,7 +109,7 @@
     </graphicData>
     <rotatable>false</rotatable>
     <statBases>
-      <MarketValue>35</MarketValue>
+      <MarketValue>75</MarketValue>
       <Mass>0.05</Mass>
       <DeteriorationRate>6</DeteriorationRate>
     </statBases>
