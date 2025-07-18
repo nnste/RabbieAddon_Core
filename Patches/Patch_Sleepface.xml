@@ -120,14 +120,13 @@
                     <drawWithoutPart>false</drawWithoutPart>
                   </BodyPart>
                 </conditions>
-                <drawSize>1</drawSize>
+                <inFrontOfBody>true</inFrontOfBody>
                 <colorChannel>skin</colorChannel>
                 <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-                <inFrontOfBody>true</inFrontOfBody>
-                <linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
                 <alignWithHead>true</alignWithHead>
                 <defaultOffset>Tail</defaultOffset>
                 <shaderType>Cutout</shaderType>
+                <drawSize>1</drawSize>
                 <offsets>
                   <south>
                     <bodyTypes>
@@ -163,14 +162,14 @@
                     <drawWithoutPart>false</drawWithoutPart>
                   </BodyPart>
                 </conditions>
-                <drawSize>1</drawSize>
+                <inFrontOfBody>false</inFrontOfBody>
                 <colorChannel>skin</colorChannel>
                 <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-                <inFrontOfBody>false</inFrontOfBody>
                 <linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
                 <alignWithHead>true</alignWithHead>
                 <defaultOffset>Tail</defaultOffset>
                 <shaderType>Cutout</shaderType>
+                <drawSize>1</drawSize>
                 <offsets>
                   <south>
                     <bodyTypes>
@@ -210,7 +209,6 @@
                 <colorChannel>skin</colorChannel>
                 <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
                 <inFrontOfBody>true</inFrontOfBody>
-                <linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
                 <alignWithHead>true</alignWithHead>
                 <defaultOffset>Tail</defaultOffset>
                 <shaderType>Cutout</shaderType>
