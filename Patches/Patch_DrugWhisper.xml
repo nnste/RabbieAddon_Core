@@ -6,16 +6,16 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
-				<!--기존PlanetariumTea레시피 및 헤디프 제거-->
+				<!--기존 개화 교체-->
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="PlanetariumTea"]/recipeMaker/recipeUsers</xpath>
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName =
+					"Rabbie"]/alienRace/generalSettings/chemicalSettings</xpath>
 					<value>
-						<recipeUsers>
-						</recipeUsers>
+    					<chemicalSettings>
+	    			    </chemicalSettings>
 					</value>
 				</li>
 			</operations>
 		</match>
 	</Operation>
-
 </Patch>
