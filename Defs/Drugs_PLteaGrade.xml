@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="MakeableDrugBase">
+    <defName>PLtea_GradeC</defName>
+    <label>저급 플라네타륨 차</label>
+    <description>저급 플라네타리움으로 끓인 평범한 차입니다.\n\n정제 과정에서 등급이 밀린 결정―주로 동물 조직을 압착하거나 일부 식물에서 채취해 얻은 미세 결정―을 우려내 깊이는 부족합니다.비릿한 혈향은 사라지고 특유의 향신료 향이 옅게 남아 있어 마시면 소소한 재미와 약간의 의식 상승 효과를 줍니다.\n값이 싸서 식당에서 ‘서비스 우롱차’처럼 흔히 내놓는 기호품으로 유통됩니다.</description>
+    <graphicData>
+      <texPath>Things/Item/Drugs/PLtea_GradeC</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MarketValue>35</MarketValue>
+      <Mass>0.05</Mass>
+      <DeteriorationRate>6</DeteriorationRate>
+    </statBases>
+    <techLevel>Ultra</techLevel>
+    <ingestible>
+      <foodType>Fluid, Processed</foodType>
+      <joyKind>Chemical</joyKind>
+      <joy>0.16</joy>
+      <baseIngestTicks>480</baseIngestTicks>
+      <nurseable>true</nurseable>
+      <drugCategory>Medical</drugCategory>
+      <ingestSound>Ingest_Drink</ingestSound>
+
+      <ingestHoldUsesTable>true</ingestHoldUsesTable>
+      <ingestCommandString>Drink {0}</ingestCommandString>
+      <ingestReportString>Drinking {0}.</ingestReportString>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>PLtea_GradeC</hediffDef>
+          <severity>1</severity>
+          <toleranceChemical>Planetarium</toleranceChemical>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+    </recipeMaker>
+    <costList>
+      <RefinedPlanetarium>1</RefinedPlanetarium>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>Planetarium</chemical>
+        <addictiveness>0.8</addictiveness>
+        <needLevelOffset>0.80</needLevelOffset>
+        <listOrder>1027</listOrder>
+      </li>
+    </comps>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+
+  <!-- 플라네타리움 섭취형태 반응: 저급 플라네타리움 차 -->
+
+  <HediffDef>
+    <defName>PLtea_GradeC</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>저급 플라네타륨 차를 마심</label>
+    <labelNoun>저급 플라네타륨 차를 마심</labelNoun>
+    <description>최근에 저급 플라네타륨 차를 마셔 하루 동안 좀더 정신이 뚜렷해지고 기분이 좋아집니다.</description>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.08</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>PLtea_GradeC</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>PLtea_GradeC</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>저급 플라네타륨 차를 마심</label>
+        <description>생각보다 나쁘지 않은데? 옅은 향이라서 더 좋을지도 모르겠어.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThingDef ParentName="MakeableDrugBase">
+    <defName>PLtea_GradeA</defName>
+    <label>고급 플라네타륨 차</label>
+    <description>.</description>
+    <graphicData>
+      <texPath>Things/Item/Drugs/PLtea_GradeA</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MarketValue>35</MarketValue>
+      <Mass>0.05</Mass>
+      <DeteriorationRate>6</DeteriorationRate>
+    </statBases>
+    <techLevel>Ultra</techLevel>
+    <ingestible>
+      <foodType>Fluid, Processed</foodType>
+      <joyKind>Chemical</joyKind>
+      <joy>0.40</joy>
+      <baseIngestTicks>480</baseIngestTicks>
+      <nurseable>true</nurseable>
+      <drugCategory>Medical</drugCategory>
+      <ingestSound>Ingest_Drink</ingestSound>
+
+      <ingestHoldUsesTable>true</ingestHoldUsesTable>
+      <ingestCommandString>Drink {0}</ingestCommandString>
+      <ingestReportString>Drinking {0}.</ingestReportString>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>PLtea_GradeA</hediffDef>
+          <severity>1</severity>
+          <toleranceChemical>Planetarium</toleranceChemical>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+    </recipeMaker>
+    <costList>
+      <RefinedPlanetarium>1</RefinedPlanetarium>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>Planetarium</chemical>
+        <addictiveness>1</addictiveness>
+        <needLevelOffset>1.0</needLevelOffset>
+        <listOrder>1027</listOrder>
+      </li>
+    </comps>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+
+  <!-- 플라네타리움 섭취형태 반응: 고급 플라네타리움 차 -->
+
+  <HediffDef>
+    <defName>PLtea_GradeA</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>고급 플라네타륨 차를 마심</label>
+    <labelNoun>고급 플라네타륨 차를 마심</labelNoun>
+    <description>최근에 고급 플라네타륨 차를 마셔 이틀 동안 좀더 정신이 뚜렷해지고 기분이 좋아집니다.</description>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.5</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.1</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>PLtea_GradeA</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>PLtea_GradeA</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>고급 플라네타륨 차를 마심</label>
+        <description>오 완전.</description>
+        <baseMoodEffect>16</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>
