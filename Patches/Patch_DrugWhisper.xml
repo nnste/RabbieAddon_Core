@@ -6,48 +6,87 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
-				<!--기존 개화 교체-->
+				<!--기존
+				개화 교체-->
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName =
-					"Rabbie"]/alienRace/generalSettings/chemicalSettings</xpath>
+						"Rabbie"]/alienRace/generalSettings/chemicalSettings</xpath>
 					<value>
 						<chemicalSettings>
-	    			    </chemicalSettings>
+						</chemicalSettings>
 					</value>
 				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName =
-					"PlanetariumTea"]/ingestible/outcomeDoers</xpath>
-					<value>
-						<li Class="RA_Core.Feature_GiveHediffConditional+IngestionOutcomeDoer_GiveHediffConditional">
-							<hediffDef>WhisperofplanetTemp</hediffDef>
-							<severity>1</severity>
-							<applyChance>0.5</applyChance>
-							<allowedRaces>
-								<li>Rabbie</li>
-							</allowedRaces>
-							<requiredGenes>
-								<li>RBRabbie</li>
-							</requiredGenes>
-						</li>
-					</value>
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Biotech</li>
+					</mods>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="PlanetariumTea"]/ingestible/outcomeDoers</xpath>
+						<value>
+							<li
+								Class="RA_Core.Feature_GiveHediffConditional+IngestionOutcomeDoer_GiveHediffConditional">
+								<hediffDef>WhisperofplanetTemp</hediffDef>
+								<severity>1</severity>
+								<applyChance>0.25</applyChance>
+								<allowedRaces>
+									<li>Rabbie</li>
+								</allowedRaces>
+								<requiredGenes>
+									<li>RBRabbie</li>
+								</requiredGenes>
+							</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="PlanetariumTea"]/ingestible/outcomeDoers</xpath>
+						<value>
+							<li
+								Class="RA_Core.Feature_GiveHediffConditional+IngestionOutcomeDoer_GiveHediffConditional">
+								<hediffDef>WhisperofplanetTemp</hediffDef>
+								<severity>1</severity>
+								<applyChance>0.25</applyChance>
+								<allowedRaces>
+									<li>Rabbie</li>
+								</allowedRaces>
+							</li>
+						</value>
+					</nomatch>
 				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName =
-					"PLtea_GradeA"]/ingestible/outcomeDoers</xpath>
-					<value>
-						<li Class="RA_Core.Feature_GiveHediffConditional+IngestionOutcomeDoer_GiveHediffConditional">
-							<hediffDef>Whisperofplanet</hediffDef>
-							<severity>1</severity>
-							<applyChance>0.07</applyChance>
-							<allowedRaces>
-								<li>Rabbie</li>
-							</allowedRaces>
-							<requiredGenes>
-								<li>RBRabbie</li>
-							</requiredGenes>
-						</li>
-					</value>
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Biotech</li>
+					</mods>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="PLtea_GradeA"]/ingestible/outcomeDoers</xpath>
+						<value>
+							<li
+								Class="RA_Core.Feature_GiveHediffConditional+IngestionOutcomeDoer_GiveHediffConditional">
+								<hediffDef>Whisperofplanet</hediffDef>
+								<severity>1</severity>
+								<applyChance>0.07</applyChance>
+								<allowedRaces>
+									<li>Rabbie</li>
+								</allowedRaces>
+								<requiredGenes>
+									<li>RBRabbie</li>
+								</requiredGenes>
+							</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="PLtea_GradeA"]/ingestible/outcomeDoers</xpath>
+						<value>
+							<li
+								Class="RA_Core.Feature_GiveHediffConditional+IngestionOutcomeDoer_GiveHediffConditional">
+								<hediffDef>Whisperofplanet</hediffDef>
+								<severity>1</severity>
+								<applyChance>0.07</applyChance>
+								<allowedRaces>
+									<li>Rabbie</li>
+								</allowedRaces>
+							</li>
+						</value>
+					</nomatch>
 				</li>
 			</operations>
 		</match>

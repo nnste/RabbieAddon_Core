@@ -23,8 +23,8 @@
       </li>
       <li Class="HediffCompProperties_Discoverable">
         <sendLetterWhenDiscovered>true</sendLetterWhenDiscovered>
-        <discoverLetterLabel>{0}의 행성의 속삭임 개화</discoverLetterLabel>
-        <discoverLetterText>{0}에게 행성의 속삭임이 들려옵니다.\n\n오랜 플라네타리움 섭취의 결과로, 때떄로 흐릿하게나마 짧은 미래를 보는 능력을 가집니다.</discoverLetterText>
+        <discoverLetterLabel>{0}의 행성의 속삭임 발현</discoverLetterLabel>
+        <discoverLetterText>{0}에게 잠시 행성의 속삭임이 들려옵니다.\n\n오랜 플라네타리움 섭취의 결과로, 때떄로 흐릿하게나마 짧은 미래를 보는 능력을 가집니다. 이틀간 지속됩니다.</discoverLetterText>
         <letterType>PositiveEvent</letterType>
         <messageType>PositiveEvent</messageType>
       </li>

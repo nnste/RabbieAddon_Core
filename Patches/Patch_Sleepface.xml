@@ -15,12 +15,12 @@
                   <!-- <Age For="HumanlikeBaby" MayRequire="Ludeon.RimWorld.Biotech">Sleepface/Rabbie/Heads/Naked_Baby</Age> -->
                   <BodyType For="Thin">
                     <extendedGraphics>
-                      <Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Sleepface/Rabbie/Heads/GhoulFace</Hediff>
+                      <Mutant MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Sleepface/Rabbie/Heads/GhoulFace</Mutant>
                     </extendedGraphics>
                   </BodyType>
-                  <BodyType For="Child">
+                  <BodyType For="Child" MayRequire="Ludeon.RimWorld.Biotech">
                     <extendedGraphics>
-                      <Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Sleepface/Rabbie/Heads/GhoulFace</Hediff>
+                      <Mutant MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Sleepface/Rabbie/Heads/GhoulFace</Mutant>
                     </extendedGraphics>
                   </BodyType>
                 </extendedGraphics>
@@ -39,13 +39,13 @@
                   <BodyType For="Thin">
                     <path>Rabbielike/Bodies/Naked_Thin</path>
                     <extendedGraphics>
-                      <Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Sleepface/Rabbie/Bodies/Ghoul_Thin</Hediff>
+                      <Mutant MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Sleepface/Rabbie/Bodies/Ghoul_Thin</Mutant>
                     </extendedGraphics>
                   </BodyType>
-                  <BodyType For="Child">
+                  <BodyType For="Child" MayRequire="Ludeon.RimWorld.Biotech">
                     <path>Rabbielike/Bodies/Naked_Child</path>
                     <extendedGraphics>
-                      <Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Sleepface/Rabbie/Bodies/Ghoul_Thin</Hediff>
+                      <Mutant MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Sleepface/Rabbie/Bodies/Ghoul_Thin</Mutant>
                     </extendedGraphics>
                   </BodyType>
                 </extendedGraphics>
@@ -298,7 +298,7 @@
                 <inFrontOfBody>false</inFrontOfBody>
                 <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
                 <extendedGraphics>
-                  <Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Sleepface/Rabbie/Heads/GhoulFace</Hediff>
+                  <Mutant MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Sleepface/Rabbie/Heads/GhoulFace</Mutant>
                 </extendedGraphics>
                 <offsets>
                   <north>
@@ -340,7 +340,7 @@
                 <inFrontOfBody>false</inFrontOfBody>
                 <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
                 <extendedGraphics>
-                  <Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Sleepface/Rabbie/Heads/GhoulFace</Hediff>
+                  <Mutant MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Sleepface/Rabbie/Heads/GhoulFace</Mutant>
                 </extendedGraphics>
                 <offsets>
                   <north>
@@ -387,7 +387,7 @@
                 <inFrontOfBody>false</inFrontOfBody>
                 <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
                 <extendedGraphics>
-                  <Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Sleepface/Rabbie/Heads/GhoulFace</Hediff>
+                  <Mutant MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Sleepface/Rabbie/Heads/GhoulFace</Mutant>
                 </extendedGraphics>
                 <offsets>
                   <north>
