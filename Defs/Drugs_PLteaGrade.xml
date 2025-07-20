@@ -12,7 +12,7 @@
     </graphicData>
     <rotatable>false</rotatable>
     <statBases>
-      <MarketValue>35</MarketValue>
+      <MarketValue>30</MarketValue>
       <Mass>0.05</Mass>
       <DeteriorationRate>6</DeteriorationRate>
     </statBases>
@@ -20,7 +20,7 @@
     <ingestible>
       <foodType>Fluid, Processed</foodType>
       <joyKind>Chemical</joyKind>
-      <joy>0.16</joy>
+      <joy>0.10</joy>
       <baseIngestTicks>480</baseIngestTicks>
       <nurseable>true</nurseable>
       <drugCategory>Medical</drugCategory>
@@ -69,7 +69,7 @@
     <isBad>false</isBad>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-1</severityPerDay>
+        <severityPerDay>-0.5</severityPerDay>
       </li>
     </comps>
     <stages>
@@ -77,7 +77,7 @@
         <capMods>
           <li>
             <capacity>Consciousness</capacity>
-            <offset>0.08</offset>
+            <offset>0.1</offset>
           </li>
         </capMods>
       </li>
@@ -109,7 +109,7 @@
     </graphicData>
     <rotatable>false</rotatable>
     <statBases>
-      <MarketValue>75</MarketValue>
+      <MarketValue>90</MarketValue>
       <Mass>0.05</Mass>
       <DeteriorationRate>6</DeteriorationRate>
     </statBases>
@@ -117,7 +117,7 @@
     <ingestible>
       <foodType>Fluid, Processed</foodType>
       <joyKind>Chemical</joyKind>
-      <joy>0.40</joy>
+      <joy>0.30</joy>
       <baseIngestTicks>480</baseIngestTicks>
       <nurseable>true</nurseable>
       <drugCategory>Medical</drugCategory>

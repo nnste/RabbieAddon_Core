@@ -42,7 +42,7 @@
       <MaxHitPoints>250</MaxHitPoints>
       <Flammability>0.1</Flammability>
       <DeteriorationRate>0</DeteriorationRate>
-      <MarketValue>30</MarketValue>
+      <MarketValue>25</MarketValue>
       <Mass>0.02</Mass>
     </statBases>
     <techLevel>Ultra</techLevel>
@@ -130,7 +130,7 @@
       <MaxHitPoints>250</MaxHitPoints>
       <Flammability>0.1</Flammability>
       <DeteriorationRate>0</DeteriorationRate>
-      <MarketValue>65</MarketValue>
+      <MarketValue>85</MarketValue>
       <Mass>0.02</Mass>
     </statBases>
     <techLevel>Ultra</techLevel>
@@ -247,7 +247,7 @@
       <li>
         <label>고급 정제플라네타륨 섭취</label>
         <description>좋았어.정말로...살아있는 기분이야.</description>
-        <baseMoodEffect>12</baseMoodEffect>
+        <baseMoodEffect>8</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>

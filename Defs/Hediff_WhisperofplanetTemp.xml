@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- 래비전용 플라네타리움 개화 상태이상(일시적) -->
+
+  <HediffDef>
+    <defName>WhisperofplanetTemp</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>행성의 속삭임(일시적)</label>
+    <description>이틀간 지속되는 일시적인 개화입니다. 래비 종족에게만 나타나는 특이 현상으로, 플라네타륨을 오래 섭취한 래비들은 눈의 빛깔이 변하며 긴장 상황에서 2~3초간의 짧은 미래를 보는 능력을 가집니다. 래비들의 사격 솜씨와 결합하여 전장에서 무서운 명중률을 발휘한다고 알려져 있습니다.</description>
+    <defaultLabelColor>(0.79,0.66,1)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_RemoveIfOtherHediff">
+        <hediffs>
+          <li>Whisperofplanet</li>
+        </hediffs>
+      </li>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.5</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_Discoverable">
+        <sendLetterWhenDiscovered>true</sendLetterWhenDiscovered>
+        <discoverLetterLabel>{0}의 행성의 속삭임 개화</discoverLetterLabel>
+        <discoverLetterText>{0}에게 행성의 속삭임이 들려옵니다.\n\n오랜 플라네타리움 섭취의 결과로, 때떄로 흐릿하게나마 짧은 미래를 보는 능력을 가집니다.</discoverLetterText>
+        <letterType>PositiveEvent</letterType>
+        <messageType>PositiveEvent</messageType>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.2</offset>
+					</li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+</Defs>

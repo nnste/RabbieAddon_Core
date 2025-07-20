@@ -6,7 +6,7 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
-				<!--기존PlanetariumTea레시피 제거-->
+				<!--기존PlanetariumTea레시피유저 제거-->
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="PlanetariumTea"]/recipeMaker/recipeUsers</xpath>
 					<value>
@@ -19,6 +19,16 @@
 					<xpath>Defs/ThingDef[defName="PlanetariumTea"]/graphicData/texPath</xpath>
 					<value>
 						<texPath>Things/Item/Drugs/PLtea_GradeB</texPath>
+					</value>
+				</li>
+				<!--기존Braincrystal무드 일부 비활성화-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThoughtDef[defName="Braincrystal"]</xpath>
+					<value>
+						<nullifyingTraits>
+							<li>Psychopath</li>
+							<li>Bloodlust</li>
+						</nullifyingTraits>
 					</value>
 				</li>
 			</operations>

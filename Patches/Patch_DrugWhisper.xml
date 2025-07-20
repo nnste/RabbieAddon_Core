@@ -11,8 +11,42 @@
 					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName =
 					"Rabbie"]/alienRace/generalSettings/chemicalSettings</xpath>
 					<value>
-    					<chemicalSettings>
+						<chemicalSettings>
 	    			    </chemicalSettings>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName =
+					"PlanetariumTea"]/ingestible/outcomeDoers</xpath>
+					<value>
+						<li Class="RA_Core.Feature_GiveHediffConditional+IngestionOutcomeDoer_GiveHediffConditional">
+							<hediffDef>WhisperofplanetTemp</hediffDef>
+							<severity>1</severity>
+							<applyChance>0.5</applyChance>
+							<allowedRaces>
+								<li>Rabbie</li>
+							</allowedRaces>
+							<requiredGenes>
+								<li>RBRabbie</li>
+							</requiredGenes>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName =
+					"PLtea_GradeA"]/ingestible/outcomeDoers</xpath>
+					<value>
+						<li Class="RA_Core.Feature_GiveHediffConditional+IngestionOutcomeDoer_GiveHediffConditional">
+							<hediffDef>Whisperofplanet</hediffDef>
+							<severity>1</severity>
+							<applyChance>0.07</applyChance>
+							<allowedRaces>
+								<li>Rabbie</li>
+							</allowedRaces>
+							<requiredGenes>
+								<li>RBRabbie</li>
+							</requiredGenes>
+						</li>
 					</value>
 				</li>
 			</operations>
