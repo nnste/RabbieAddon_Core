@@ -1,2 +1,8 @@
 고급 플라네타리움 차 설명
 고급 플라네타리움 차 무드 설명
+
+Meat_MeatMixBuild 기기 텍스쳐 및 thingdef
+Meat_MeatMixMake 레시피 - 저급 플라네타륨 생성
+Meat_MeatMixThing 합성고기 텍스쳐 및 복용시 무드 하락
+
+일반 플라네타륨으로 일시 개화 약물(플라네타륨소모 충족량 덜참)

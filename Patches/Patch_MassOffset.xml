@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Rabbie The Moonrabbit race</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!--운반오프셋 추가 가운-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="RB_Inteligown"]/equippedStatOffsets</xpath>
+					<value>
+						<MassOffset>+0.5</MassOffset>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="RB_Energygown"]/equippedStatOffsets</xpath>
+					<value>
+						<MassOffset>+0.5</MassOffset>
+					</value>
+				</li>
+				<!--운반오프셋 추가 케리어-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="RB_Apron"]/equippedStatOffsets</xpath>
+					<value>
+						<MassOffset>+1</MassOffset>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="RB_Infantryvest"]/equippedStatOffsets</xpath>
+					<value>
+						<MassOffset>+1</MassOffset>
+					</value>
+				</li>
+				<!--운반오프셋 추가 작업복-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="RB_Technician"]/equippedStatOffsets</xpath>
+					<value>
+						<MassOffset>+1.5</MassOffset>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="RB_Infantryuniform"]/equippedStatOffsets</xpath>
+					<value>
+						<MassOffset>+1.5</MassOffset>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="RB_Infantrynewuniform"]/equippedStatOffsets</xpath>
+					<value>
+						<MassOffset>+1.5</MassOffset>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="RB_Handygirl"]/equippedStatOffsets</xpath>
+					<value>
+						<MassOffset>+1.5</MassOffset>
+					</value>
+				</li>
+				<!--운반오프셋 추가 수트-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="RB_RegularInfantrySuit"]/equippedStatOffsets</xpath>
+					<value>
+						<MassOffset>+5</MassOffset>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

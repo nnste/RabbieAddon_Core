@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!--Make_PlanetariumTea_GradeC
+    <RecipeDef>
+        <defName>Make_PlanetariumTea_GradeC</defName>
+        <label>저급 플라네타륨 차 제작</label>
+        <jobString>저급 플라네타륨 차 만드는 중.</jobString>
+        <workAmount>400</workAmount>
+        <workSpeedStat>CookSpeed</workSpeedStat>
+        <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_CookMeal</soundWorking>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>RB_Braincrystal</li>
+                        <li>PlanetariumCase_GradeC</li>
+                        <li MayRequire="lsk.rabbiefurnitureandfacilities.basic">LSK_Low_Content_Planetarium</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>RB_Braincrystal</li>
+                <li>PlanetariumCase_GradeC</li>
+                <li MayRequire="lsk.rabbiefurnitureandfacilities.basic">LSK_Low_Content_Planetarium</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <PLtea_GradeC>1</PLtea_GradeC>
+        </products>
+        <recipeUsers>
+            <li>Campfire</li>
+            <li>ElectricStove</li>
+            <li>FueledStove</li>
+        </recipeUsers>
+        <skillRequirements>
+            <Cooking>2</Cooking>
+        </skillRequirements>
+        <researchPrerequisite>Planettea</researchPrerequisite>
+      <displayPriority>1470</displayPriority>
+    </RecipeDef>-->
+</Defs>
