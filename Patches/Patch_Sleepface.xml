@@ -27,7 +27,6 @@
               </head>
             </value>
           </li>
-
           <!-- ▣ BODY graphic -->
           <li Class="PatchOperationReplace">
             <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Rabbie"]/alienRace/graphicPaths/body</xpath>
